@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Gerador de Senhas</title>
+
+    <!-- Importando o arquivo CSS localizado na pasta /static -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Gerador de Senhas</h1>
+
+    <!-- Formulário que envia um POST para gerar a senha -->
+    <form action="/" method="POST">
+
+        <!-- Label com classe personalizada para mudar cor e estilo -->
+        <label class="label-tamanho">Tamanho da senha:</label>
+
+        <!-- Campo numérico para escolher o tamanho da senha -->
+        <input type="number" name="tamanho" min="4" max="50" required>
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Gerar</button>
+    </form>
+
+    <!-- Só aparece se uma senha tiver sido gerada (condição do Flask) -->
+    {% if senha %}
+        <div class="resultado">
+
+            <!-- Texto fixo -->
+            <p><strong>Senha gerada:</strong></p>
+
+            <!-- Local onde a senha gerada será mostrada -->
+            <p class="senha">{{ senha }}</p>
+        </div>
+    {% endif %}
+
+</body>
+</html>

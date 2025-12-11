@@ -1,0 +1,65 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial;          /* Fonte principal */
+    background: #cea0ff;         /* Cor de fundo lilás */
+    text-align: center;          /* Centraliza textos */
+    padding: 200px;              /* Espaçamento interno grande */
+    color: white;                /* Cor do texto */
+}
+
+/* Estilo do texto "Tamanho da senha" */
+.label-tamanho {
+    color: black;               /* Cor preta */
+    font-size: 19px;             /* Tamanho da fonte */
+    font-weight: bold;           /* Deixa em negrito */
+}
+
+/* Layout do formulário */
+form {
+    margin-top: 20px;            /* Espaço acima do formulário */
+    display: flex;               /* Coloca itens lado a lado */
+    justify-content: center;     /* Centraliza horizontalmente */
+    align-items: center;         /* Centraliza verticalmente */
+}
+
+/* Campo de entrada do tamanho da senha */
+input {
+    padding: 6px;                /* Espaçamento interno */
+    margin-left: 5px;            /* Espaço à esquerda */
+    width: 100px;                /* Largura do input */
+    border-radius: 6px;          /* Bordas arredondadas */
+    border: none;                /* Remove borda padrão */
+}
+
+/* Botão de gerar senha */
+button {
+    padding: 6px 8px;            /* Espaçamento interno */
+    margin-left: 5px;            /* Espaço do input */
+    border: none;                /* Remove borda padrão */
+    outline: none;               /* Remove contorno ao clicar */
+    border-radius: 6px;          /* Bordas arredondadas */
+    cursor: pointer;             /* Muda para mãozinha */
+}
+
+/* Caixa onde a senha é exibida */
+.resultado {
+    margin-top: 30px;            /* Espaço acima da caixa */
+    background: #faf9f6c1;     /* Fundo off-white transparente */
+    padding: 10px 15px;          /* Espaçamento interno */
+    border-radius: 8px;          /* Bordas arredondadas */
+    color: black;              /* Cor do texto interno */
+    width: fit-content;          /* Caixa fica do tamanho do conteúdo */
+    max-width: 80%;              /* Não deixa ultrapassar a tela */
+    margin-left: auto;           /* Centraliza horizontalmente */
+    margin-right: auto;          /* Centraliza horizontalmente */
+    text-align: center;          /* Centraliza textos */
+    word-wrap: break-word;       /* Quebra palavras grandes */
+    overflow-wrap: break-word;   /* Evita estourar o layout */
+}
+
+/* Estilo da senha exibida */
+.senha {
+    font-size: 20px;             /* Tamanho da fonte */
+    color: #0077cc;              /* Cor azul */
+    font-weight: bold;           /* Negrito */
+}
